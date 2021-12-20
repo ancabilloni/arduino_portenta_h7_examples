@@ -7,9 +7,9 @@ void setup() {
 }
 
 void blink(int led, unsigned long msecs = 1000) {
-    digitalWrite(led, HIGH);
-    delay(msecs);
     digitalWrite(led, LOW);
+    delay(msecs);
+    digitalWrite(led, HIGH);
     delay(msecs);
 }
 
